@@ -1,11 +1,10 @@
-application-name: @project.artifactId@
-application-description: @project.description@
-application-version: @project.version@
+application:
+  name: @project.artifactId@
+  description: @project.description@
+  version: @project.version@
 
 server:
   port: 8080
-  servlet:
-    context-path: /shopping-cart/api/${shopping-cart.api.version}
 
 spring:
   application:
@@ -13,8 +12,11 @@ spring:
   boot:
     admin:
       client:
-        enabled: true
-        url: http://localhost:9090
+        enabled: ${SPRING_BOOT_ADMIN_CLIENT_ENABLED:true}
+        url: http://localhost:8765
+  cloud:
+    discovery:
+      enabled: ${SPRING_CLOUD_DISCOVERY_ENABLED:true}
   datasource:
     url: "jdbc:h2:mem:testdb"
   h2:
@@ -34,12 +36,7 @@ item-storage:
   hostname: item-storage
   port: 8080
   api:
-    url: http://${item-storage.hostname}:${item-storage.port}/item-storage/api/${item-storage.api.version}
-    version: v1
-
-shopping-cart:
-  api:
-    version: v1
+    url: http://${item-storage.hostname}:${item-storage.port}
 
 springdoc:
   api-docs:
