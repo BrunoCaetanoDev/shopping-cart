@@ -1,0 +1,55 @@
+application:
+  name: @project.artifactId@
+  description: @project.description@
+  version: @project.version@
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: shopping-cart
+  boot:
+    admin:
+      client:
+        enabled: ${SPRING_BOOT_ADMIN_CLIENT_ENABLED:true}
+        url: http://localhost:8765
+  cloud:
+    discovery:
+      enabled: ${SPRING_CLOUD_DISCOVERY_ENABLED:true}
+  datasource:
+    url: "jdbc:h2:mem:testdb"
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  data:
+    web:
+      pageable:
+        size-parameter: size
+        page-parameter: page
+        default-page-size: 20
+        one-indexed-parameters: false
+        max-page-size: 100
+
+item-storage:
+  hostname: item-storage
+  port: 8080
+  api:
+    url: http://${item-storage.hostname}:${item-storage.port}
+
+springdoc:
+  api-docs:
+    path: "/api-docs"
+  swagger-ui:
+    path: "/"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
