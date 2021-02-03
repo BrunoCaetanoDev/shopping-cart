@@ -74,6 +74,7 @@ public class ShoppingCartConstant {
 	public static final String CART_ITEMS = "cartItems";
 	public static final String ITEMS = "items";
 	public static final String ITEM_STORAGE_DISPATCH_URI = "dispatch";
+	public static final String ITEM_STORAGE = "ITEM-STORAGE";
 
 
 }

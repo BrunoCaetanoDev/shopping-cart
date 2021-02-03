@@ -14,7 +14,7 @@ import org.springframework.web.client.RestTemplate;
 
 @Configuration
 @RequiredArgsConstructor
-//@ConditionalOnProperty(name = "spring.cloud.discovery.enabled", havingValue = "false", matchIfMissing = true)
+@ConditionalOnProperty(name = "spring.cloud.discovery.enabled", havingValue = "false", matchIfMissing = true)
 public class RestClientConfiguration {
 
     @Bean

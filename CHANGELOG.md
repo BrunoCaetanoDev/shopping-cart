@@ -6,8 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.1.0] - 2020-01-22
+## [0.1.0] - 2020-02-02
 ### Added
+* Open feign client (ECSC-3)
 * Eureka Client and service registration capabilities (ECSC-1)
 ### Changed
 ### Deprecated
