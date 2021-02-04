@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 * Openfeign client (ECSC-3)
 * Eureka Client and service registration capabilities (ECSC-1)
-* Cloud configuration client (ECSC-1)
+* Cloud configuration client (ECSC-2)
 ### Changed
 ### Deprecated
 ### Removed
