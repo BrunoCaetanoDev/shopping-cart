@@ -8,8 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.1.0] - 2020-02-02
 ### Added
-* Open feign client (ECSC-3)
+* Openfeign client (ECSC-3)
 * Eureka Client and service registration capabilities (ECSC-1)
+* Cloud configuration client (ECSC-1)
 ### Changed
 ### Deprecated
 ### Removed
