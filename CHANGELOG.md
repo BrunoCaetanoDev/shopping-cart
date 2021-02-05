@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * Openfeign client (ECSC-3)
 * Eureka Client and service registration capabilities (ECSC-1)
 * Cloud configuration client (ECSC-2)
+* Spring Sleuth client (ECSC-8)
 ### Changed
 ### Deprecated
 ### Removed
