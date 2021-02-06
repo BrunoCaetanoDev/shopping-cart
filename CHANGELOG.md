@@ -9,11 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.0] - 2020-02-02
 ### Added
 * Openfeign client (ECSC-3)
+* Circuit breaker through feign fallback methods (ECSC-4)
 * Eureka Client and service registration capabilities (ECSC-1)
 * Cloud configuration client (ECSC-2)
 * Spring Sleuth client (ECSC-8)
 * Spring Zipkin client (ECSC-10)
-
+ 
 ### Changed
 ### Deprecated
 ### Removed
